@@ -109,11 +109,6 @@ self.model = "gpt-4o-mini"  # Change to gpt-4o, gpt-4-turbo, etc.
 
 📹 **Demo Video**: [Watch the demo video here](demo.mp4)
 
-The demo shows:
-- Setting up the application
-- Running a sample workflow
-- Exploring the multi-agent process
-- Reviewing comprehensive results
 
 ## 🛠️ Development
 
@@ -134,47 +129,5 @@ streamlit run app.py --server.port 8502 --server.headless false
 ```bash
 python start.py
 ```
-
-### Docker Deployment
-```dockerfile
-FROM python:3.9-slim
-WORKDIR /app
-COPY requirements.txt .
-RUN pip install -r requirements.txt
-COPY . .
-EXPOSE 8502
-CMD ["streamlit", "run", "app.py", "--server.port", "8502", "--server.address", "0.0.0.0"]
-```
-
-### Cloud Deployment
-- **Heroku**: Deploy using the provided Dockerfile
-- **AWS/GCP/Azure**: Deploy to cloud platforms using container services
-- **Streamlit Cloud**: Deploy directly to Streamlit Cloud
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- **OpenAI API**: For providing the AI capabilities
-- **Streamlit**: For the beautiful, interactive frontend
-- **Open Source Community**: For the tools and libraries
-
-## 📞 Support
-
-- Create an issue in the repository
-- Check the demo video for usage examples
-- Review the code comments for implementation details
-
----
 
 **Built with ❤️ for demonstrating AI engineering excellence**
